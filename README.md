@@ -13,9 +13,19 @@ datasets with information of Human Activity Recognition Using Smartphones. A ful
 ##The data
 The dataset can be downloaded from:
 **https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip**
+8 data file included in the downloaded dataset are read and manipulated by **run_analysis.R**:
+
+*X_test.txt
+*Y_test.txt
+*X_train.txt
+*Y_train.txt
+*subject_test.txt
+*subject_train.txt
+*features.txt
+*activity_labels.txt
 
 ##The script output
-**tidy_dataset.txt** is a txt file and outcome produced by run_analysis.R.
+**tidy_dataset.txt** is a txt file, and the outcome produced by run_analysis.R.
 The file is created in the working directory with the R function
 ```{r}
 write.table(tdf, file="tidy_dataset.txt", row.name=FALSE)*
