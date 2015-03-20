@@ -5,22 +5,23 @@ date: "Friday, March 20, 2015"
 output: html_document
 ---
 
-#The scrpit
+##The scrpit
 **run_analysis.R** is an R script which collects, works with, cleans and summarizes 
-datasets with information of Human Activity Recognition Using Smartphones.
+datasets with information of Human Activity Recognition Using Smartphones. A full description of the data and the experiment are available at the site where the data was obtained: 
+**http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones**
 
-#The data
+##The data
 The dataset can be downloaded from:
 **https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip**
 
-#The script and files work toghther
+##The script output
 **tidy_dataset.txt** is a txt file and outcome produced by run_analysis.R.
 The file is created in the working directory with the R function
 ```{r}
 write.table(tdf, file="tidy_dataset.txt", row.name=FALSE)*
 ```
 
-#How to make the script work
+##How to make the script work
 The following steps should be done in order to execute **run_analysis.R** and 
 produce **tidy_dataset.txt**
 
@@ -34,7 +35,6 @@ produce **tidy_dataset.txt**
 ```{r}
 tdf <- read.table("tidy_dataset.txt", sep = "")
 ```
-
 
 
 [1]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
