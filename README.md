@@ -21,7 +21,7 @@ The file is created in the working directory with the R function
 write.table(tdf, file="tidy_dataset.txt", row.name=FALSE)*
 ```
 
-##How to make the script work
+##How the script and data work together  
 The following steps should be done in order to execute **run_analysis.R** and 
 produce **tidy_dataset.txt**
 
