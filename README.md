@@ -15,14 +15,14 @@ The dataset can be downloaded from:
 **https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip**
 8 data file included in the downloaded dataset are read and manipulated by **run_analysis.R**:
 
-*X_test.txt
-*Y_test.txt
-*X_train.txt
-*Y_train.txt
-*subject_test.txt
-*subject_train.txt
-*features.txt
-*activity_labels.txt
+* X_test.txt
+* Y_test.txt
+* X_train.txt
+* Y_train.txt
+* subject_test.txt
+* subject_train.txt
+* features.txt
+* activity_labels.txt
 
 ##The script output
 **tidy_dataset.txt** is a txt file, and the outcome produced by run_analysis.R.
