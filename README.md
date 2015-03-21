@@ -5,7 +5,7 @@ date: "Friday, March 20, 2015"
 output: html_document
 ---
 
-##How the scrpit works
+##How the script works
 **run_analysis.R** is an R script which collects, works with, cleans and summarizes 
 datasets with information of Human Activity Recognition Using Smartphones. A full description of the data and the experiment are available at the site where the data was obtained: 
 **http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones**
@@ -15,9 +15,9 @@ datasets with information of Human Activity Recognition Using Smartphones. A ful
 1. Reads the relevant data files from their respective directories
 2. Merges the training and the test sets to create one data set
 3. Extracts only the measurements on the mean and standard deviation for each measurement. 
-4. Uses descriptive activity names *Subject* and *Activity* to identify the individuals who performed the actvities during experiment 
+4. Uses descriptive activity names *Subject* and *Activity* to identify the individuals who performed the activities during experiment 
 5. Labels the data set variables with descriptive variable names. 
-6. Finally an independant, tidy and summarized dataset is created and saved, with the average of each measurement extracted on 3., for each activity and each subject.
+6. Finally an independent, tidy and summarized dataset is created and saved, with the average of each measurement extracted on 3., for each activity and each subject.
 
 ##The data
 The dataset can be downloaded from:
