@@ -1,5 +1,5 @@
 ---
-title: "Getting and Cleaning Data Course Project"
+title: "Getting and Cleaning Data Course Project: README"
 author: "Nuno Melo"
 date: "Friday, March 20, 2015"
 output: html_document

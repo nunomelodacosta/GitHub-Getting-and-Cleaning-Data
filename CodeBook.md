@@ -7,37 +7,55 @@ output: html_document
 
 
 #Variables
-##The Created Variables
-Column1 and 2
+##Created Variables
+### Column1 and 2
 
-##Subject
-Column 1, Int: 1 to 30
-30 different individuals, identifies the individual of performed and actvity with its respective measurements
+**Subject**
 
-##Actvity
-Column 2, Factor w/6 levels, LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
-Identifies the actvities performed by each "Subject"
+* Column 1, Int: 1 to 30
+* 30 different individuals, identifies the individual of performed and actvity with its respective measurements
+
+**Activity**
+
+* Column 2, Factor w/6 levels, LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+* Identifies the actvities performed by each "Subject"
 
 ##Selected variables, from the datased, on the mean and standard deviation
-Column 3 to 68
+* Column 3 to 68, num
 
-* tBodyAcc-XYZ
-* tGravityAcc-XYZ
-* tBodyAccJerk-XYZ
-* tBodyGyro-XYZ
-* tBodyGyroJerk-XYZ
-* tBodyAccMag
-* tGravityAccMag
-* tBodyAccJerkMag
-* tBodyGyroMag
-* tBodyGyroJerkMag
-* fBodyAcc-XYZ
-* fBodyAccJerk-XYZ
-* fBodyGyro-XYZ
-* fBodyAccMag
-* fBodyAccJerkMag
-* fBodyGyroMag
-* fBodyGyroJerkMag
+**tBodyAcc-XYZ**
+
+**tGravityAcc-XYZ**
+
+**tBodyAccJerk-XYZ**
+
+**tBodyGyro-XYZ**
+
+**tBodyGyroJerk-XYZ**
+
+**tBodyAccMag**
+
+**tGravityAccMag**
+
+**tBodyAccJerkMag**
+
+**tBodyGyroMag**
+
+**tBodyGyroJerkMag**
+
+**fBodyAcc-XYZ**
+
+**fBodyAccJerk-XYZ**
+
+**fBodyGyro-XYZ**
+
+**fBodyAccMag**
+
+**fBodyAccJerkMag**
+
+**fBodyGyroMag**
+
+**fBodyGyroJerkMag**
 
 The set of variables that were estimated from these signals are: 
 
@@ -45,8 +63,8 @@ mean(): Mean value
 std(): Standard deviation
 
 ###Examples of how variable names are constructed and their meaning
-1. tBodyAcc-mean()-X    tBodyAcc-mean()-Y       tBodyAcc-mean()-Z
-2. tBodyAcc-std()-X     tBodyAcc-std()-Y        tBodyAcc-std()-Z
+**tBodyAcc-mean()-X**    **tBodyAcc-mean()-Y**       **tBodyAcc-mean()-Z**
+**tBodyAcc-std()-X**     **tBodyAcc-std()-Y**        **tBodyAcc-std()-Z**
 
 ###Explanation
 **Source**: "features_info.txt" file included the **UCI HAR Dataset** directory
