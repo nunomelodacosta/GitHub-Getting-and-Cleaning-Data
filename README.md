@@ -11,12 +11,13 @@ datasets with information of Human Activity Recognition Using Smartphones. A ful
 **http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones**
 
 **run_analysis.R** script performs the following steps. These are commented within the script as well.
+
 1. Reads the relevant data files from their respective directories
 2. Merges the training and the test sets to create one data set
 3. Extracts only the measurements on the mean and standard deviation for each measurement. 
 4. Uses descriptive activity names *Subject* and *Activity* to identify the individuals who performed the actvities during experiment 
 5. Labels the data set variables with descriptive variable names. 
-6. Finally an independant, tidy and summarized is created and saved, with the average of each variable for each activity and each subject.
+6. Finally an independant, tidy and summarized dataset is created and saved, with the average of each measurement extracted on 3., for each activity and each subject.
 
 ##The data
 The dataset can be downloaded from:
@@ -42,8 +43,9 @@ write.table(tdf, file="tidy_dataset.txt", row.name=FALSE)*
 ##How to run the script and create the desired output file
 The following steps should be done in order, to execute **run_analysis.R** and 
 produce **tidy_dataset.txt**
+
 1. Know your working directory in R with [*getwd()*][2] function
-2. Download the dataset from this [link][1]. copy the link above to your web browser, if it does not work
+2. Download the dataset from this [link][1]
 3. Save the downloaded zip file **getdata-projectfiles-UCI HAR Dataset.zip** into your R working directory
 4. Unzip the **getdata-projectfiles-UCI HAR Dataset.zip** file into your working directory. A new directory **UCI HAR Dataset** will be created. This directory has all raw data needed
 5. Copy **run_analysis.R** into your working directory

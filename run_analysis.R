@@ -45,7 +45,7 @@ names(df) <- features$V2
 
 ## Subsetting "df" to include only 
 ## measurements on the mean and standard deviation 
-variablesSubset <- grep("mean|std", names(df))   
+variablesSubset <- grepl('mean\\(\\)|std\\(\\)',names(df))
 df <- df[, variablesSubset]
 
 ## Including in "df" columns with actvity labels and Subjects

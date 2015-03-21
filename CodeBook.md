@@ -1,41 +1,65 @@
 ---
-title: "Getting and Cleaning Data Course Project"
+title: "Getting and Cleaning Data Course Project: CodeBook"
 author: "Nuno Melo"
 date: "Friday, March 20, 2015"
 output: html_document
 ---
 
-#The scrpit
-**run_analysis.R** is an R script which collects, works with, cleans and summarizes 
-datasets with information of Human Activity Recognition Using Smartphones.
 
-#The data
-The dataset can be downloaded from:
-**https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip**
+#Variables
+##The Created Variables
+Column1 and 2
 
-#The script and files work toghther
-**tidy_dataset.txt** is a txt file and outcome produced by run_analysis.R.
-The file is created in the working directory with the R function
-```{r}
-write.table(tdf, file="tidy_dataset.txt", row.name=FALSE)*
-```
+##Subject
+Column 1, Int: 1 to 30
+30 different individuals, identifies the individual of performed and actvity with its respective measurements
 
-#How to make the script work
-The following steps should be done in order to execute **run_analysis.R** and 
-produce **tidy_dataset.txt**
+##Actvity
+Column 2, Factor w/6 levels, LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+Identifies the actvities performed by each "Subject"
 
-1. Download the dataset from this [link][1] (copy the link above to your web browser, if it does not work)
-2. A directory **UCI HAR Dataset** will be created. This directory has all raw data needed
-3. Copy **run_analysis.R** to the **UCI HAR Dataset** directory
-4. Set **UCI HAR Dataset** your working directory with [*setwd()*][2] function R
-5. Open **run_analysis.R** with your R editor and run the script 
-6. Load the file into a dataframe in R for analysis and further manipulation with 
+##Selected variables, from the datased, on the mean and standard deviation
+Column 3 to 68
 
-```{r}
-tdf <- read.table("tidy_dataset.txt", sep = "")
-```
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+###Examples of how variable names are constructed and their meaning
+1. tBodyAcc-mean()-X    tBodyAcc-mean()-Y       tBodyAcc-mean()-Z
+2. tBodyAcc-std()-X     tBodyAcc-std()-Y        tBodyAcc-std()-Z
+
+###Explanation
+**Source**: "features_info.txt" file included the **UCI HAR Dataset** directory
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These are estimated variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 
 
-[1]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-[2]: https://stat.ethz.ch/R-manual/R-devel/library/base/html/getwd.html
+
