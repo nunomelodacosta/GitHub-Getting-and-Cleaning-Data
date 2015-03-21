@@ -1,9 +1,6 @@
 # Sourcing librarries required to tiding data
 library(plyr); library(dplyr); library(reshape2)
 
-# Cleaning workspace variable list
-rm(list=ls())
-
 # Initializing directory variables containing the files
 # Note: "getdata-projectfiles-UCI HAR Dataset.zip" should be 
 # extracted beforehand in your working directory
