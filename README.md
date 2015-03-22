@@ -5,6 +5,16 @@ date: "Friday, March 20, 2015"
 output: html_document
 ---
 
+**IMPORTANT**: Copy the data files and the script into to your current working directory. Please read the *"How to run the script and create the desired output file"*  below intructions carefully
+
+
+## Files included in this repo (GitHub-Getting-and-Cleaning Data)
+
+* run_analysis.R: R script file
+* CodeBook.md: Codebook for run_analysis.R
+* README.md: Readme file
+* tidy_dataset.txt: the output of run_analysis.R script
+
 ##How the script works
 **run_analysis.R** is an R script which collects, works with, cleans and summarizes 
 datasets with information of Human Activity Recognition Using Smartphones. A full description of the data and the experiment are available at the site where the data was obtained: 
@@ -48,7 +58,7 @@ produce **tidy_dataset.txt**
 2. Download the dataset from this [link][1]
 3. Save the downloaded zip file **getdata-projectfiles-UCI HAR Dataset.zip** into your R working directory
 4. Unzip the **getdata-projectfiles-UCI HAR Dataset.zip** file into your working directory. A new directory **UCI HAR Dataset** will be created. This directory has all raw data needed
-5. Copy **run_analysis.R** into your working directory
+5. Copy **run_analysis.R** into your working directory.
 6. Open **run_analysis.R** with your R editor and run the full script 
 7. Load **tidy_dataset.txt** file into a dataframe in R for analysis and further manipulation with 
 
